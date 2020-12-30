@@ -1,0 +1,65 @@
+{
+  "version": 1509502173483,
+  "appPolicyList": [
+    {
+      "priority": 2,
+      "packageName": "com.microsoft.mmx",
+      "name": "MMX App"
+    },
+    {
+      "priority": 3,
+      "packageName": "com.microsoft.mmx.sendtopc",
+      "name": "MMX SendToPC App"
+    },
+    {
+      "priority": 5,
+      "packageName": "com.microsoft.appmanager",
+      "name": "Microsoft Apps"
+    },
+    {
+      "priority": 6,
+      "packageName": "com.microsoft.launcher",
+      "name": "Arrow Launcher"
+    },
+    {
+      "priority": 7,
+      "packageName": "com.microsoft.emmx",
+      "name": "Microsoft EMMX"
+    },
+    {
+      "priority": 11,
+      "packageName": "com.microsoft.emmx.selfhost",
+      "name": "Microsoft EMMX Dogfood"
+    },
+    {
+      "priority": 12,
+      "packageName": "com.microsoft.emmx.daily",
+      "name": "Microsoft EMMX Daily"
+    },
+    {
+      "priority": 13,
+      "packageName": "com.microsoft.emmx.development",
+      "name": "Microsoft EMMX Development"
+    },
+    {
+      "priority": 20,
+      "packageName": "com.microsoft.cortana",
+      "name": "Cortana"
+    },
+    {
+      "priority": 9998,
+      "packageName": "com.microsoft.mmx.continuitytestapp",
+      "name": "MMX Continuity Test App"
+    },
+    {
+      "priority": 9999,
+      "packageName": "com.microsoft.mmx.sdkdemo",
+      "name": "MMX SDK Demo"
+    },
+    {
+      "priority": 10000,
+      "packageName": "com.example.feren.mmxtester",
+      "name": "MMX SDK Tester"
+    }
+  ]
+}

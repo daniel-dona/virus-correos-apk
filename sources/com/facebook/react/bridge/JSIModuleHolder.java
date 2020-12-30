@@ -1,0 +1,32 @@
+package com.facebook.react.bridge;
+
+/* compiled from: PG */
+public class JSIModuleHolder {
+    public JSIModule mModule;
+    public final JSIModuleSpec mSpec;
+
+    public JSIModuleHolder(JSIModuleSpec jSIModuleSpec) {
+        this.mSpec = jSIModuleSpec;
+    }
+
+    public JSIModule getJSIModule() {
+        if (this.mModule == null) {
+            synchronized (this) {
+                if (this.mModule != null) {
+                    JSIModule jSIModule = this.mModule;
+                    return jSIModule;
+                }
+                this.mModule = this.mSpec.getJSIModuleProvider().get();
+                this.mModule.initialize();
+            }
+        }
+        return this.mModule;
+    }
+
+    public void notifyJSInstanceDestroy() {
+        JSIModule jSIModule = this.mModule;
+        if (jSIModule != null) {
+            jSIModule.onCatalystInstanceDestroy();
+        }
+    }
+}

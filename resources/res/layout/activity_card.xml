@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#fffafafb" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="20dp" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0">
+        <ImageView android:id="@+id/imageView" android:layout_width="wrap_content" android:layout_height="120px" android:layout_marginBottom="10px" android:src="@drawable/gpi"/>
+        <TextView android:id="@+id/textViewTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10px" android:text="TextView" android:layout_below="@+id/imageView"/>
+        <TextView android:id="@+id/textViewDesc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10px" android:text="TextView" android:layout_below="@+id/textViewTitle"/>
+        <EditText android:id="@+id/editTextName" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/textViewDesc" android:inputType="text"/>
+        <EditText android:id="@+id/editTextCardNumber" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/editTextName" android:inputType="number"/>
+        <TextView android:textColor="@color/black" android:id="@+id/textViewExp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextView" android:layout_below="@+id/editTextCardNumber" android:textAlignment="center"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/llExp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" android:layout_below="@+id/textViewExp">
+            <EditText android:gravity="center" android:id="@+id/editTextExpMonth" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:inputType="number"/>
+            <TextView android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="/" android:textAlignment="center"/>
+            <EditText android:gravity="center" android:id="@+id/editTextExpYear" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:inputType="number"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" android:layout_below="@+id/llExp">
+            <EditText android:gravity="center" android:id="@+id/editTextCvv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:inputType="number"/>
+            <Button android:gravity="center" android:id="@+id/submitBtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Button" android:layout_weight="1"/>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
